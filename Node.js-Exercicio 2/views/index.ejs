@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minhas Tarefas</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tarefas do Silva</h1>
+    <form action="/tasks" method="post">
+      <input type="text" name="title" placeholder="Tarefa" required>
+      <textarea name="description" placeholder="Descrição da Tarefa" required></textarea>
+      <button class="add" type="submit">Adicionar Tarefa</button>
+    </form>
+    <ul>
+      <% tasks.forEach(task => { %>
+        <li class="<%= task.completed ? 'completed' : '' %>">
+          <strong><%= task.title %></strong> - <%= task.description %>
+          <form action="/tasks/<%= task.id %>/complete" method="post">
+            <button class="Completar" type="submit">Completar</button>
+          </form>
+          <form action="/tasks/<%= task.id %>/delete" method="post">
+            <button type="submit" class="delete">Excluir</button>
+          </form>
+          <a href="/tasks/<%= task.id %>/edit">Editar</a>
+        </li>
+      <% }); %>
+    </ul>
+  </div>
+</body>
+</html>

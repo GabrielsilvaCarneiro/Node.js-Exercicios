@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box; /* Corrigir box-sizing */
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Fundo branco */
+    color: #0033A0; /* Azul do BB */
+    margin: 40px;
+}
+
+header {
+    background-color: #FFCC00; /* Amarelo do BB */
+    border: solid 2px #0033A0;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+}
+
+h1 {
+    color: #0033A0; /* Azul do BB */
+    text-align: center;
+    padding-top: 25px;
+}
+
+h2.dash {
+    color: #0033A0; /* Azul do BB */
+    margin-top: 35px;
+}
+
+h2.add {
+    color: #0033A0; /* Azul do BB */
+    margin-top: 55px;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+table, th, td {
+    border: 1px solid #0033A0; /* Azul do BB */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFCC00;  /* Amarelo do BB */
+    color: #000000; 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 15px;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+input {
+    border: solid 2px #0033A0; /* Azul do BB */
+    padding: 10px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #dbaf00; /* Amarelo do BB */
+    color: #0033A0; /* Azul do BB */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px #0033A0; /* Azul do BB */
+}
+
+button:hover {
+    background-color: #FFD700; /* Um pouco mais escuro que o amarelo do BB */
+}
+
+/* Estilo para o botão de exclusão */
+.delete-button {
+    background-color: #dbaf00; /* Amarelo do BB */
+    color: #0033A0; /* Azul do BB */
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px #0033A0; /* Azul do BB */
+    width: 150px; 
+    height: 35px;
+    margin-left: 175px;
+    margin-top: -15px;
+    align-items: center;
+    text-align: center;
+}
+
+.delete-button:hover {
+    background-color: #FFD700; /* Um pouco mais escuro que o amarelo do BB */
+    color: #0033A0; /* Azul do BB */
+}

@@ -1,0 +1,142 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('Car.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: #ffffffcc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+    padding-top: 25px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="text"] {
+    height: 50px;
+}
+
+.add {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 5px; /* Adiciona espaço entre os botões */
+}
+
+.Completar {
+    height: 35px;
+    width: 100px;
+    font-weight: bold;
+    background-color: #00ba00;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.Completar:hover {
+    background-color: #00ff00;
+}
+
+.delete {
+    background-color: #bd0600;
+    height: 35px;
+    width: 100px;
+    font-weight: bold;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    transition: background-color 0.3s ease;
+    margin-right: 25px;
+
+}
+
+.delete:hover {
+    background-color: #ff0800;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    padding-left: 25px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #000000;
+}
+
+li form {
+    display: inline;
+}
+
+li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 45px;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
